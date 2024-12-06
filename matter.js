@@ -4,15 +4,16 @@
 <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
  */}
 
-var canvas = $('#wrapper-canvas').get(0)
+var canvas =  document.querySelector("#wrapper-canvas");
+
 
 var dimensions = {
-  width: $(window).width(),
-  height: $(window).height(),
-}
+  width: window.innerWidth,
+  height: window.innerHeight,
+};
 
-Matter.use('matter-attractors')
-Matter.use('matter-wrap')
+Matter.use("matter-attractors");
+Matter.use("matter-wrap");
 
 function runMatter() {
   // module aliases
